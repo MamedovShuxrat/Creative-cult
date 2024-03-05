@@ -1,0 +1,56 @@
+$primary-color: #fff;
+$second-color: #171722;
+$gray: #FCFCFC33;
+$accent-orange: #F47616;
+$accent-light-green: #02CC89;
+$accent-purple: #6549D4;
+$deep-blue: #234EE4;
+$deep-light-blue: #4AD6FF;
+
+
+$main-font-size: 16px;
+
+
+$primary-fonts: 'Manrope';
+$secondary-fonts: 'Nunito Sans';
+
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/manrope-v15-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/manrope-v15-latin-700.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-display: swap;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/nunito-sans-v15-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/nunito-sans-v15-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/nunito-sans-v15-latin-700.woff2') format('woff2');
+}

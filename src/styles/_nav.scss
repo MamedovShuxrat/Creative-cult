@@ -1,0 +1,144 @@
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__lists {
+    display: flex;
+    max-width: 780px;
+    width: 100%;
+    list-style: none;
+    background: $primary-color;
+    border-radius: 100px;
+    padding: 16px 32px;
+}
+
+.nav__item {
+    position: relative;
+    margin-right: 32px;
+}
+
+.nav__link {
+    color: $second-color;
+    font-family: $secondary-fonts;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    white-space: nowrap;
+    text-decoration: none;
+
+}
+
+.nav__item-services,
+.nav__item-media {
+    padding-right: 17px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: 4px;
+        width: 7px;
+        height: 4px;
+        background: url('./images/nav-arrow-down.svg') center/cover no-repeat;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    &:hover {
+        .nav__sublist {
+            display: block;
+        }
+    }
+}
+
+
+.nav__sublist {
+    display: none;
+    position: absolute;
+    list-style: none;
+    top: 50px;
+    left: 0;
+}
+
+.nav__sub-item {
+    background: #d5e2fc;
+    border-radius: 50px;
+    margin-bottom: 2px;
+    text-align: center;
+
+}
+
+.nav__sub-link {
+    text-decoration: none;
+    color: $second-color;
+    font-size: 14px;
+    display: block;
+    padding: 8px;
+    text-wrap: nowrap;
+}
+
+
+.nav__lists-btn {
+    display: flex;
+}
+
+.nav__lists-btn {
+    padding: 8px;
+    background-color: $primary-color;
+    border-radius: 100px;
+}
+
+.nav__btn {
+    padding: 10px 32px;
+    border-radius: 50px;
+    background: #d5e2fc;
+    cursor: pointer;
+    text-wrap: nowrap;
+    border: none;
+}
+
+
+.nav__btn-resume {
+    color: $deep-blue;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: 0%;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-color: $deep-blue;
+        color: $primary-color;
+    }
+}
+
+.nav__btn-project {
+    position: relative;
+    background-color: $deep-blue;
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: 0%;
+    transition: all .3s ease-in-out;
+    padding-right: 50px;
+
+    &:hover {
+        background-color: #d5e2fc;
+        color: $deep-blue ;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 14px;
+        right: 25px;
+        width: 14px;
+        height: 14px;
+        background: url('./images/discussion.svg') center/cover no-repeat;
+        z-index: 1;
+        cursor: pointer;
+    }
+}

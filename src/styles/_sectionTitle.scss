@@ -1,0 +1,54 @@
+.section__title {
+    position: relative;
+    z-index: 10;
+}
+
+.title__wrapper {
+    display: flex;
+    max-width: 700px;
+    flex-wrap: wrap;
+}
+
+.title,
+.accent-color,
+.title__accent {
+    font-family: $primary-fonts;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 100%;
+    color: $primary-color;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-left: 5px;
+}
+
+.accent-color-light_blue {
+    color: $deep-light-blue;
+}
+
+.title__accent {
+    padding: 10px 32px;
+    color: $primary-color;
+    border-radius: 100px;
+    background: $deep-light-blue;
+    display: flex;
+
+}
+
+.title__accent-light_blue {
+    background-color: $deep-light-blue;
+
+}
+
+.title__text {
+    max-width: 560px;
+    margin-top: 32px;
+    color: #FCFCFC;
+    font-family: $secondary-fonts;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.8;
+}

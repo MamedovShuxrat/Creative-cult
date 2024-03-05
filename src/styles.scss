@@ -1,0 +1,37 @@
+@import "styles/varibales.scss";
+@import "styles/header.scss";
+@import "styles/nav.scss";
+@import "styles/solution.scss";
+
+@import "styles/sectionTitle.scss";
+@import "styles/sectionWallet.scss";
+@import "styles/about.scss";
+
+@import "styles/footer.scss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary-fonts;
+    color: $primary-color;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}

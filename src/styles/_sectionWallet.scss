@@ -1,0 +1,98 @@
+.section-wallet {
+    display: flex;
+    column-gap: 8px;
+}
+
+.section-wallet__item {
+    border-radius: 32px 32px;
+    max-width: 50%;
+    width: 100%;
+}
+
+.section-wallet__item-orange {
+    background: linear-gradient(225.00deg, rgb(244, 118, 22) 0%, rgb(208, 57, 22) 100%);
+
+}
+
+.section-wallet__item-green {
+    background: linear-gradient(225.00deg, rgb(92, 225, 169) 0%, rgb(0, 206, 136) 51.042%, rgb(0, 137, 115) 100%);
+}
+
+.section-wallet__content {
+    background-color: $primary-color;
+    border-radius: 32px;
+    margin-top: 104px;
+    padding: 40px;
+}
+
+.section-wallet__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.section-wallet__title {
+    color: $second-color;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 104%;
+}
+
+.section-wallet__title-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: rgb(213, 226, 252);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 13px;
+        left: 13px;
+        width: 13px;
+        height: 13px;
+        background: url('./images/arrow-to-link.svg') center/cover no-repeat;
+        z-index: 1;
+    }
+}
+
+.section-wallet__text {
+    color: rgb(16, 16, 16);
+    font-family: $secondary-fonts;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 300px;
+    margin-bottom: 40px;
+}
+
+.section-wallet__tags {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    row-gap: 4px;
+}
+
+.section-wallet__tag {
+    padding: 10px 24px;
+    color: $primary-color;
+    text-wrap: nowrap;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 104%;
+}
+
+.section-wallet__tag-slash {
+    padding: 10px 12px;
+
+}
+
+.section-wallet__tag-orange {
+    background-color: $accent-orange;
+}
+
+.section-wallet__tag-green {
+    background-color: $accent-light-green;
+}
