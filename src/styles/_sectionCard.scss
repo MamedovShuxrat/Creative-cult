@@ -1,0 +1,65 @@
+.section__cards {
+    margin-top: 40px;
+    display: flex;
+    gap: 8px;
+
+}
+
+.section__cards-item {
+    width: calc(33% - 8px);
+    border-radius: 32px;
+}
+
+.section__cards-item_schneider {
+    background: url('./images/card-schneider-bg.png') center/cover;
+}
+
+.card__tags {
+    margin: 16px 16px 165px;
+}
+
+.card__tag {
+    padding: 10px 20px;
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 104%;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.card__tag-orange {
+    background-color: $accent-orange;
+}
+
+.card__tag-green {
+    background-color: $accent-light-green;
+}
+
+.card__tag-purple {
+    background-color: $accent-purple;
+}
+
+.card__content {
+    background-color: $primary-color;
+    padding: 40px 40px 48px;
+    border-radius: 32px;
+}
+
+.card__date {
+    display: block;
+    color: $second-color;
+    opacity: 0.5;
+    font-family: $secondary-fonts;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 12px;
+}
+
+.card__text {
+    color: $second-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+}

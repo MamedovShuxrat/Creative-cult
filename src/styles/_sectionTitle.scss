@@ -9,7 +9,6 @@
     flex-wrap: wrap;
 }
 
-.title,
 .accent-color,
 .title__accent {
     font-family: $primary-fonts;
@@ -17,23 +16,54 @@
     font-weight: 600;
     line-height: 100%;
     color: $primary-color;
-    margin-bottom: 20px;
 }
 
 .title {
     margin-left: 5px;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 100%;
+    color: $primary-color;
+    margin-bottom: 20px;
+
 }
 
 .accent-color-light_blue {
     color: $deep-light-blue;
 }
 
-.title__accent {
-    padding: 10px 32px;
+.accent-color_light-green {
+    color: $accent-light-green;
+
+}
+
+.title__accent-wrapper {
+    padding: 0 32px 10px;
     color: $primary-color;
     border-radius: 100px;
-    background: $deep-light-blue;
     display: flex;
+    column-gap: 8px;
+}
+
+.title__accent-wrapper-success {
+    padding: 0;
+}
+
+
+.title__accent {
+    border-radius: 100px;
+}
+
+.title-success {
+    margin-bottom: 0;
+    font-family: $primary-fonts;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.title__wrapper-light_blue {
+    background-color: $deep-light-blue;
 
 }
 
@@ -41,6 +71,7 @@
     background-color: $deep-light-blue;
 
 }
+
 
 .title__text {
     max-width: 560px;
@@ -51,4 +82,25 @@
     font-weight: 400;
     line-height: 160%;
     opacity: 0.8;
+}
+
+.title__text-success {
+    color: $primary-color;
+    margin-bottom: 96px;
+
+}
+
+.title-purple,
+.accent-color_purple,
+.title__accent_purple {
+    font-size: 48px;
+}
+
+.title__wrapper_purple {
+    background-color: $accent-purple;
+}
+
+.title__accent_purple {
+    background-color: $accent-purple;
+
 }

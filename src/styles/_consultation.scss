@@ -1,0 +1,267 @@
+.consultation {
+    padding-top: 110px;
+    margin-top: -110px;
+    border-radius: 64px 64px 0px 0px;
+    position: relative;
+    z-index: 10;
+    background: $deep-blue;
+}
+
+.consultation__inner {
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consultation__descr {
+    max-width: 568px;
+}
+
+.consultation__title {
+    color: $primary-color;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 32px;
+}
+
+.consultation__text {
+    color: $primary-color;
+    font-family: $secondary-fonts;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    opacity: 0.8;
+    margin-bottom: 80px;
+
+}
+
+.consultation__social {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 6px;
+}
+
+.consultation__link {
+    width: 50%;
+    padding: 10px 100px 10px 115px;
+    border-radius: 50px;
+    background: $primary-color;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+.social-tg {
+    position: relative;
+    color: #25A4E2;
+    transition: all .3s ease-in-out;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 14px;
+        left: 90px;
+        width: 14px;
+        height: 14px;
+        background: url('./images/social-tg.svg') center/contain no-repeat;
+        z-index: 1;
+    }
+
+    &:hover {
+        background-color: #25A4E2;
+        color: $primary-color;
+
+        &::before {
+            opacity: 0;
+        }
+    }
+
+}
+
+.social-what {
+    position: relative;
+    color: rgb(82, 205, 95);
+
+    text-align: left;
+    transition: all .3s ease-in-out;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 14px;
+        left: 90px;
+        width: 14px;
+        height: 14px;
+        background: url('./images/social-what.svg') center/contain no-repeat;
+        z-index: 1;
+    }
+
+    &:hover {
+        background: rgb(82, 205, 95);
+        color: $primary-color;
+
+        &::before {
+            opacity: 0;
+        }
+    }
+}
+
+
+.social-vk {
+    position: relative;
+    color: #4C75A3;
+
+    text-align: left;
+    transition: all .3s ease-in-out;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 14px;
+        left: 90px;
+        width: 15px;
+        height: 15px;
+        background: url('./images/social-vk.svg') center/contain no-repeat;
+        z-index: 1;
+    }
+
+    &:hover {
+        background: #4C75A3;
+        color: $primary-color;
+
+        &::before {
+            opacity: 0;
+        }
+    }
+}
+
+.social-mail {
+    position: relative;
+    color: #145CEF;
+
+    text-align: left;
+    transition: all .3s ease-in-out;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 14px;
+        left: 90px;
+        width: 15px;
+        height: 15px;
+        background: url('./images/social-mail.svg') center/contain no-repeat;
+        z-index: 1;
+    }
+
+    &:hover {
+        background: #145CEF;
+        color: $primary-color;
+
+        &::before {
+            opacity: 0;
+        }
+    }
+}
+
+.consultation__form {
+    max-width: 500px;
+}
+
+.form {
+    border-radius: 40px;
+    background: rgba(252, 252, 252, 0.2);
+    padding: 56px 48px;
+
+    input {
+        padding: 16px 24px;
+        border: none;
+        width: 100%;
+        background: rgba(252, 252, 252, 0.22);
+        color: $primary-color;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        outline: none;
+
+        &::placeholder {
+            color: #FCFCFC;
+            opacity: .7;
+        }
+    }
+}
+
+.form__title {
+    color: $primary-color;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 104%;
+    margin-bottom: 32px;
+}
+
+.form__name {
+    margin-bottom: 8px;
+    border-radius: 12px 12px 0 0;
+}
+
+.form__tel {
+    margin-bottom: 8px;
+}
+
+.form__email {
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 32px;
+}
+
+.form__descr {
+    font-family: $secondary-fonts;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+    margin-bottom: 16px;
+
+}
+
+.form__accent-color {
+    color: #4AD6FF;
+    opacity: 1;
+}
+
+.form__submit {
+    position: relative;
+    padding: 10px 32px;
+    background-color: $primary-color;
+    color: $deep-blue;
+    color: rgb(20, 92, 239);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 160%;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 14px;
+        right: 90px;
+        width: 15px;
+        height: 15px;
+        background: url('./images/social-mail.svg') center/contain no-repeat;
+        z-index: 1;
+    }
+
+    &:hover {
+        background: #145CEF;
+        color: $primary-color;
+
+        &::before {
+            opacity: 0;
+        }
+    }
+}

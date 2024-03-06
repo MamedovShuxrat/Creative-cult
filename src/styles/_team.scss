@@ -1,0 +1,35 @@
+.team {
+    padding: 160px 0 120px;
+    position: relative;
+
+    background: url("./images/team-bg.png") center/cover;
+    background-position: center 40px;
+    min-height: 1028px;
+    margin-top: -160px;
+
+}
+
+
+
+.team__descr {
+    padding-top: 160px;
+    position: relative;
+}
+
+.accent-color_purple {
+    color: $accent-purple;
+    font-size: 48px;
+}
+
+.title__accent_purple {
+    background-color: $accent-purple;
+    font-size: 48px;
+}
+
+.team__btn {
+    position: absolute;
+    top: 160px;
+    right: 0;
+    cursor: pointer;
+    z-index: 15;
+}

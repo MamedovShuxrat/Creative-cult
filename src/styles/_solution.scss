@@ -1,22 +1,16 @@
 .solution {
     background: linear-gradient(135.00deg, rgb(28, 39, 74) 0%, rgb(4, 7, 17) 100%);
-
+    margin-top: -140px;
+    border-radius: 0px 0px 64px 64px;
+    position: relative;
+    z-index: 11;
 }
 
 .solution__inner {
-    padding: 120px 120px 0;
+    padding: 0 120px;
     position: relative;
     border-radius: 0px 0px 64px 64px;
     border: 1px solid #fff;
+    overflow: hidden;
 
-    &::before {
-        position: absolute;
-        background: url('./images/header-bg.png') center/cover no-repeat;
-        content: '';
-        width: 1135px;
-        height: 727px;
-        top: 0px;
-        right: -240px;
-        z-index: 1;
-    }
 }

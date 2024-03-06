@@ -1,12 +1,16 @@
-.section-wallet {
+.section-wallet_inner {
     display: flex;
-    column-gap: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: relative;
+    z-index: 10;
 }
 
 .section-wallet__item {
     border-radius: 32px 32px;
-    max-width: 50%;
-    width: 100%;
+    padding-top: 104px;
+    width: calc(50% - 8px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .section-wallet__item-orange {
@@ -18,11 +22,41 @@
     background: linear-gradient(225.00deg, rgb(92, 225, 169) 0%, rgb(0, 206, 136) 51.042%, rgb(0, 137, 115) 100%);
 }
 
+.section-wallet__item-green-mix {
+    background: url('./images/wallet-bg-1.png') center/cover;
+    background-position: center -3px;
+}
+
+.section-wallet__item-greeny-mix {
+    background: url('./images/wallet-bg-2.png') center/cover;
+}
+
+.section-wallet__item-orange-1 {
+    background: url('./images/wallet-bg-3.png'), linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
+}
+
+.section-wallet__item-orange-2 {
+
+    background: url('./images/wallet-bg-4.png'), linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
+}
+
+.section-wallet__item-orange-3 {
+    background: url('./images/wallet-bg-5.png'), linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
+}
+
+.section-wallet__item-orange-4 {
+
+    background: url('./images/wallet-bg-6.png'), linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
+}
+
+
+
 .section-wallet__content {
     background-color: $primary-color;
     border-radius: 32px;
-    margin-top: 104px;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .section-wallet__wrapper {
@@ -44,6 +78,7 @@
     border-radius: 50px;
     background: rgb(213, 226, 252);
     position: relative;
+    transition: transform .2s linear;
 
     &::before {
         content: '';
@@ -55,23 +90,34 @@
         background: url('./images/arrow-to-link.svg') center/cover no-repeat;
         z-index: 1;
     }
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .section-wallet__text {
-    color: rgb(16, 16, 16);
+    color: $second-color;
     font-family: $secondary-fonts;
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
     max-width: 300px;
     margin-bottom: 40px;
+    opacity: 0.8;
+
 }
 
 .section-wallet__tags {
+    margin-top: auto;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     row-gap: 4px;
+}
+
+.section-wallet__tags-green {
+    max-width: 300px;
 }
 
 .section-wallet__tag {

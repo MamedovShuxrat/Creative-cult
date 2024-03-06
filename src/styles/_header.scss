@@ -1,9 +1,7 @@
-.header {
-    background: linear-gradient(135.00deg, rgb(28, 39, 74) 0%, rgb(4, 7, 17) 100%);
-}
-
 .header__inner {
-    padding: 16px 120px 0 120px;
+    padding-top: 16px;
+    position: relative;
+    z-index: 13;
 }
 
 .header__lists {

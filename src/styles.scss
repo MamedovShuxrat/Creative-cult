@@ -6,6 +6,12 @@
 @import "styles/sectionTitle.scss";
 @import "styles/sectionWallet.scss";
 @import "styles/about.scss";
+@import "styles/complex.scss";
+@import "styles/team.scss";
+@import "styles/services.scss";
+@import "styles/sectionCard.scss";
+@import "styles/success.scss";
+@import "styles/consultation.scss";
 
 @import "styles/footer.scss";
 
@@ -30,8 +36,13 @@ img {
     display: block;
 }
 
+ul {
+    list-style: none;
+}
+
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 }
