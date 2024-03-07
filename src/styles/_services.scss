@@ -2,7 +2,7 @@
     position: relative;
     border-radius: 0px 0px 64px 64px;
     padding: 170px 0 120px;
-    margin-top: -50px;
+    margin-top: -64px;
 }
 
 .services-bg_gray {
@@ -99,5 +99,22 @@
 
     &.active {
         color: $primary-color ;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 120px 0 80px;
+    }
+
+}
+
+@media (max-width: 475px) {
+    .services__title {
+        font-size: 36px;
+    }
+
+    .filter__item {
+        font-size: 13px;
     }
 }

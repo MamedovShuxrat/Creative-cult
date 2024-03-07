@@ -62,3 +62,25 @@
     line-height: 140%;
     margin-top: 8px;
 }
+
+@media (max-width: 768px) {
+
+    .about {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .about__item {
+        max-width: 50%;
+        margin-right: 0;
+    }
+
+    .accent-about__title {
+        font-size: 28px;
+    }
+
+    .about-team {
+        margin-top: 140px;
+    }
+
+}

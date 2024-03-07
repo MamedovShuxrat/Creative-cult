@@ -479,10 +479,18 @@
             <p class="consultation__text">Напишите нам, позвоните или оставьте заявку. Выбирайте наиболее
               удобный для вас способ коммуникации!</p>
             <div class="consultation__social">
-              <a href="https://t.me" class="consultation__link social-tg" target="_blank">Telegram</a>
-              <a href="https://wa.me" class="consultation__link social-what" target="_blank">Whatsapp</a>
-              <a href="https://vk.com" class="consultation__link social-vk" target="_blank">Вконтакте</a>
-              <a href="mailto:" class="consultation__link social-mail" target="_blank">Почта</a>
+              <div class="consultation__item">
+                <a href="https://t.me" class="consultation__link social-tg" target="_blank">Telegram</a>
+              </div>
+              <div class="consultation__item">
+                <a href="https://wa.me" class="consultation__link social-what" target="_blank">Whatsapp</a>
+              </div>
+              <div class="consultation__item">
+                <a href="https://vk.com" class="consultation__link social-vk" target="_blank">Вконтакте</a>
+              </div>
+              <div class="consultation__item">
+                <a href="mailto:" class="consultation__link social-mail" target="_blank">Почта</a>
+              </div>
             </div>
           </div>
           <div class="consultation__form">
@@ -506,55 +514,106 @@
     <div class="container">
       <div class="footer__inner">
         <div class="footer__contacts">
-          <img src="images/swift-logo.png" alt="footer logo" class="footer__logo">
-          <img src="images/nordcore.png" alt="footer logo" class="footer__logo">
-          <div class="footer__logo-wrapper">
-            <span class="footer__info-title">Москва</span>
-            <a href="geo:55.735437,37.604312?q=4й Добрынинский переулок, дом 8, офис С03-01"
-              class="footer__info footer__info-adress">4й Добрынинский переулок, дом 8, офис С03-01</a>
+          <div class="footer__logo-box">
+            <div class="footer__img-box">
+              <img src="images/swift-logo.png" alt="footer logo" class="footer__logo">
+            </div>
+            <div class="footer__img-box">
+              <img src="images/nordcore.png" alt="footer logo" class="footer__logo">
+            </div>
           </div>
+
           <div class="footer__logo-wrapper">
-            <a href="mailto:Contact@SwiftTechnical.ru"
-              class="footer__info footer__info-mail">Contact@SwiftTechnical.ru</a>
-            <a href="tel:+7(495)663-65-00" class="  footer__info-tel" id="contacts"> +7 (495) 663-65-00</a>
+            <div class="footer__logo-contacts">
+              <span class="footer__info-title">Москва</span>
+              <a href="geo:55.735437,37.604312?q=4й Добрынинский переулок, дом 8, офис С03-01"
+                class="footer__info footer__info-adress">4й Добрынинский переулок, дом 8, офис С03-01</a>
+            </div>
+            <div class="footer__logo-contacts">
+              <a href="mailto:Contact@SwiftTechnical.ru"
+                class="footer__info footer__info-mail">Contact@SwiftTechnical.ru</a>
+              <a href="tel:+7(495)663-65-00" class="  footer__info-tel" id="contacts"> +7 (495) 663-65-00</a>
+            </div>
+            <div class="footer__logo-contacts mobile-desktop">
+              <span class="footer__info" id="work">HR-отдел</span>
+              <a href="#" class="footer__info-title">Rabota@SwiftTechnical.ru</a>
+            </div>
+            <div class="footer__logo-contacts   mobile-desktop">
+              <div class="footer__social">
+                <a target="_blank" href="#https://t.me" class="footer__link ft-tg"> </a>
+                <a target="_blank" href="#https://m.dzen.ru" class="footer__link ft-lk"></a>
+                <a target="_blank" href="#https://vk.com" class="footer__link ft-vk"></a>
+                <a target="_blank" href="#https://www.tiktok.com/@linkedin" class="footer__link ft-in"></a>
+                <a target="_blank" href="#https://spb.hh.ru" class="footer__link ft-hh"></a>
+              </div>
+            </div>
           </div>
         </div>
         <hr class="footer__line">
         <div class="footer__about">
           <div class="footer__about-item">
-            <a href="#swift" class="footer__info-title">Swift Technical</a>
-            <a href="#consultation" class="footer__info">Подбор персонала</a>
-            <a href="#consultation" class="footer__info">Временный персонал</a>
-            <a href="#consultation" class="footer__info">Консультационные услуги</a>
-            <a href="#consultation" class="footer__info">Подбор персонала</a>
-            <a href="#consultation" class="footer__info">Временный персонал</a>
-            <a href="#consultation" class="footer__info">Консультационные услуги</a>
+            <div class="footer__title-wrapper footer__info-title">
+              Swift Technical
+              <span class="footer__title-arrow" data-target="item-1"></span>
+            </div>
+            <div class="footer__about-lists">
+              <a href="#consultation" class="footer__info">Подбор персонала</a>
+              <a href="#consultation" class="footer__info">Временный персонал</a>
+              <a href="#consultation" class="footer__info">Консультационные услуги</a>
+              <a href="#consultation" class="footer__info">Подбор персонала</a>
+              <a href="#consultation" class="footer__info">Временный персонал</a>
+              <a href="#consultation" class="footer__info">Консультационные услуги</a>
+            </div>
           </div>
           <div class="footer__about-item">
-            <a href="#nordCore" class="footer__info-title">Nordcore</a>
-            <a href="#consultation" class="footer__info">Обучение и оценка</a>
-            <a href="#consultation" class="footer__info">Консультационные услуги</a>
-            <a href="#consultation" class="footer__info">Обучение и оценка</a>
-            <a href="#consultation" class="footer__info">Консультационные услуги</a>
-            <a href="#consultation" class="footer__info">Обучение и оценка</a>
-            <a href="#consultation" class="footer__info">Консультационные услуги</a>
+            <div class="footer__title-wrapper footer__info-title">
+              Nordcore
+              <span class="footer__title-arrow" data-target="item-2"></span>
+            </div>
+            <div class="footer__about-lists">
+              <a href="#consultation" class="footer__info">Обучение и оценка</a>
+              <a href="#consultation" class="footer__info">Консультационные услуги</a>
+              <a href="#consultation" class="footer__info">Обучение и оценка</a>
+              <a href="#consultation" class="footer__info">Консультационные услуги</a>
+              <a href="#consultation" class="footer__info">Обучение и оценка</a>
+              <a href="#consultation" class="footer__info">Консультационные услуги</a>
+            </div>
           </div>
-          <div class="footer__about-item">
+          <div class="footer__about-item mobile-desktop">
             <a href="#cases" class="footer__info-title">Кейсы</a>
-            <a href="#media" class="footer__info-title">Медиа</a>
-            <a href="#media" class="footer__info">Статьи</a>
-            <a href="#media" class="footer__info">Гайды</a>
-            <a href="#media" class="footer__info">Новости</a>
-            <a href="#media" class="footer__info">Мероприятия</a>
           </div>
 
           <div class="footer__about-item">
+            <div class="footer__about-item laptop-desktop">
+              <a href=" #cases" class="footer__title-wrapper footer__info-title">Кейсы</a>
+            </div>
+            <div class="footer__title-wrapper footer__info-title">
+              Медиа
+              <span class="footer__title-arrow" data-target="item-3"></span>
+            </div>
+            <div class="footer__about-lists">
+              <a href="#media" class="footer__info">Статьи</a>
+              <a href="#media" class="footer__info">Гайды</a>
+              <a href="#media" class="footer__info">Новости</a>
+              <a href="#media" class="footer__info">Мероприятия</a>
+            </div>
+          </div>
+          <div class="footer__about-item laptop-desktop">
             <a href="#" class="footer__info-title">О холдинге</a>
             <a href="#work" class="footer__info-title">Вакансии</a>
             <a href="#contacts" class="footer__info-title">Контакты</a>
           </div>
+          <div class="footer__about-item mobile-desktop">
+            <a href="#cases" class="footer__info-title">О холдинге</a>
+          </div>
+          <div class="footer__about-item mobile-desktop">
+            <a href="#cases" class="footer__info-title">Вакансии</a>
+          </div>
+          <div class="footer__about-item mobile-desktop">
+            <a href="#cases" class="footer__info-title">Контакты</a>
+          </div>
 
-          <div class="footer__about-item">
+          <div class="footer__about-item laptop-desktop">
             <span class="footer__info" id="work">Почта для резюме</span>
             <a href="#" class="footer__info-title">Rabota@SwiftTechnical.ru</a>
             <div class="footer__social">

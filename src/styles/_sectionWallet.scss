@@ -23,30 +23,30 @@
 }
 
 .section-wallet__item-green-mix {
-    background: url('./images/wallet-bg-1.png') center/cover;
+    background: url('./images/wallet-bg-1.png') center/cover no-repeat;
     background-position: center -3px;
 }
 
 .section-wallet__item-greeny-mix {
-    background: url('./images/wallet-bg-2.png') center/cover;
+    background: url('./images/wallet-bg-2.png') center/cover no-repeat;
 }
 
 .section-wallet__item-orange-1 {
-    background: url('./images/wallet-bg-3.png'), linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
+    background: url('./images/wallet-bg-3.png') center/cover no-repeat, linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
 }
 
 .section-wallet__item-orange-2 {
 
-    background: url('./images/wallet-bg-4.png'), linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
+    background: url('./images/wallet-bg-4.png') center/cover no-repeat, linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
 }
 
 .section-wallet__item-orange-3 {
-    background: url('./images/wallet-bg-5.png'), linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
+    background: url('./images/wallet-bg-5.png') center/cover no-repeat, linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
 }
 
 .section-wallet__item-orange-4 {
 
-    background: url('./images/wallet-bg-6.png'), linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
+    background: url('./images/wallet-bg-6.png') center/cover no-repeat, linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
 }
 
 
@@ -142,4 +142,17 @@
 
 .section-wallet__tag-green {
     background-color: $accent-light-green;
+}
+
+@media (max-width: 768px) {
+    .section-wallet__item {
+        width: calc(100% - 8px);
+    }
+}
+
+@media (max-width: 475px) {
+
+    .section-wallet__title {
+        font-size: 28px;
+    }
 }

@@ -42,7 +42,7 @@
     color: $primary-color;
     border-radius: 100px;
     display: flex;
-    column-gap: 8px;
+    gap: 8px;
 }
 
 .title__accent-wrapper-success {
@@ -102,5 +102,45 @@
 
 .title__accent_purple {
     background-color: $accent-purple;
+
+}
+
+@media (max-width: 768px) {
+    .complex__descr {
+        padding-top: 100px;
+    }
+
+    .title,
+    .accent-color,
+    .accent-color_purple,
+    .title__accent_purple,
+    .title__accent {
+        font-size: 48px;
+    }
+
+    .title__text {
+        font-size: 14px;
+    }
+
+    .title__accent-wrapper {
+        flex-wrap: wrap;
+        background-color: inherit;
+        padding: 0;
+    }
+
+    .title__accent {
+        padding: 2px 20px 10px;
+    }
+}
+
+@media (max-width: 475px) {
+
+    .title,
+    .accent-color,
+    .accent-color_purple,
+    .title__accent_purple,
+    .title__accent {
+        font-size: 36px;
+    }
 
 }

@@ -1,5 +1,4 @@
 .consultation {
-    padding-top: 110px;
     margin-top: -110px;
     border-radius: 64px 64px 0px 0px;
     position: relative;
@@ -8,7 +7,7 @@
 }
 
 .consultation__inner {
-    padding: 120px 0;
+    padding: 120px 0 170px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +15,7 @@
 
 .consultation__descr {
     max-width: 568px;
+    padding-right: 20px;
 }
 
 .consultation__title {
@@ -43,15 +43,25 @@
     row-gap: 6px;
 }
 
-.consultation__link {
+.consultation__item {
     width: 50%;
-    padding: 10px 100px 10px 115px;
     border-radius: 50px;
     background: $primary-color;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.consultation__link {
+    padding: 10px 0;
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
     line-height: 160%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .social-tg {
@@ -63,7 +73,7 @@
         content: '';
         position: absolute;
         top: 14px;
-        left: 90px;
+        left: 25%;
         width: 14px;
         height: 14px;
         background: url('./images/social-tg.svg') center/contain no-repeat;
@@ -73,6 +83,7 @@
     &:hover {
         background-color: #25A4E2;
         color: $primary-color;
+        border-radius: 60px;
 
         &::before {
             opacity: 0;
@@ -92,7 +103,7 @@
         content: '';
         position: absolute;
         top: 14px;
-        left: 90px;
+        left: 25%;
         width: 14px;
         height: 14px;
         background: url('./images/social-what.svg') center/contain no-repeat;
@@ -102,6 +113,7 @@
     &:hover {
         background: rgb(82, 205, 95);
         color: $primary-color;
+        border-radius: 51px;
 
         &::before {
             opacity: 0;
@@ -121,7 +133,7 @@
         content: '';
         position: absolute;
         top: 14px;
-        left: 90px;
+        left: 25%;
         width: 15px;
         height: 15px;
         background: url('./images/social-vk.svg') center/contain no-repeat;
@@ -131,6 +143,7 @@
     &:hover {
         background: #4C75A3;
         color: $primary-color;
+        border-radius: 51px;
 
         &::before {
             opacity: 0;
@@ -149,7 +162,7 @@
         content: '';
         position: absolute;
         top: 14px;
-        left: 90px;
+        left: 25%;
         width: 15px;
         height: 15px;
         background: url('./images/social-mail.svg') center/contain no-repeat;
@@ -159,6 +172,8 @@
     &:hover {
         background: #145CEF;
         color: $primary-color;
+        border-radius: 50px;
+        width: 100%;
 
         &::before {
             opacity: 0;
@@ -263,5 +278,45 @@
         &::before {
             opacity: 0;
         }
+    }
+}
+
+@media (max-width: 1120px) {
+    .form__submit {
+
+        &::before {
+            right: 20px;
+        }
+    }
+
+    .consultation__title {
+        font-size: 48px;
+    }
+
+    .consultation__inner {
+        flex-wrap: wrap;
+        row-gap: 40px;
+        justify-content: center;
+    }
+
+    .consultation__descr {
+        padding-right: 0;
+    }
+
+    .form {
+        padding: 46px 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .consultation__inner {
+        padding-bottom: 120px;
+    }
+}
+
+@media (max-width: 475px) {
+
+    .consultation__item {
+        width: 100%;
     }
 }

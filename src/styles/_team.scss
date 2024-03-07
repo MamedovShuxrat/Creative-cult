@@ -4,7 +4,6 @@
 
     background: url("./images/team-bg.png") center/cover;
     background-position: center 40px;
-    min-height: 1028px;
     margin-top: -160px;
 
 }
@@ -32,4 +31,10 @@
     right: 0;
     cursor: pointer;
     z-index: 15;
+}
+
+@media (max-width: 1120px) {
+    .team__btn {
+        top: 100px;
+    }
 }

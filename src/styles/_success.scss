@@ -32,3 +32,30 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 768px) {
+    .succsess__descr {
+        margin-top: 60px;
+
+        .title__wrapper {
+            max-width: 500px;
+        }
+    }
+
+    .title__wrapper-light_blue {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .title-success,
+    .title__accent,
+    .accent-color_light-green {
+        font-size: 36px;
+    }
+
+
+    .success-btn__wrapper {
+        padding-bottom: 200px;
+    }
+
+}
