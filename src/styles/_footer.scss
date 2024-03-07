@@ -12,6 +12,7 @@
 .footer__contacts {
     margin-top: 16px;
     display: flex;
+    column-gap: 8px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 48px;
@@ -19,18 +20,26 @@
 
 .footer__logo-wrapper {}
 
-.footer__info {
+.footer__info,
+.copy-right__info {
     display: block;
     text-decoration: none;
+    color: $primary-color;
+    opacity: 0.7;
+    font-family: $secondary-fonts;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
 }
 
-.footer__info-city,
+.footer__info-title,
 .footer__info-tel {
     color: $primary-color;
     font-size: 18px;
     font-weight: 700;
     line-height: 120%;
     margin-bottom: 6px;
+    text-decoration: none;
 }
 
 .footer__info-adress,
@@ -53,5 +62,172 @@
 }
 
 .footer__line {
+    margin: 0 -15px;
     border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer__about {
+    margin: 48px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__about-item {
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+
+
+    .footer__info-title {
+        margin-bottom: 16px;
+    }
+
+    .footer__info {
+        margin-bottom: 10px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 0;
+            bottom: 0;
+            height: 2px;
+            background: rgb(117, 117, 117);
+            background: linear-gradient(-90deg, rgba(117, 117, 117, 0.11528361344537819) 0%, rgba(167, 167, 167, 0.3897934173669467) 46%, rgba(250, 250, 250, 0.5130427170868348) 100%);
+            transition: width .4s ease;
+        }
+
+        &:hover::before {
+            width: 100%
+        }
+    }
+}
+
+.footer__social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__link {
+    display: block;
+    height: 44px;
+    width: 44px;
+    border-radius: 50px;
+    cursor: pointer;
+    background: hsla(0, 0%, 99%, 0.102);
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        margin: 2px;
+        background-color: #145CEF;
+        transform: scale3d(1.1);
+    }
+}
+
+.ft-tg {
+    position: relative;
+
+    &::before {
+        background: url('images/ft-tg.svg') 50% / contain no-repeat;
+        content: "";
+        height: 22px;
+        width: 22px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+}
+
+.ft-lk {
+    position: relative;
+
+    &::before {
+        background: url('images/ft-lk.svg') 50% / contain no-repeat;
+        content: "";
+        height: 21px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 21px;
+        z-index: 1;
+    }
+}
+
+.ft-vk {
+    position: relative;
+
+    &::before {
+        background: url('images/ft-vk.svg') 50% / contain no-repeat;
+        content: "";
+        height: 12px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        z-index: 1;
+    }
+}
+
+.ft-in {
+    position: relative;
+
+    &::before {
+        background: url('images/ft-in.svg') 50% / contain no-repeat;
+        content: "";
+        width: 17px;
+        height: 16px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+}
+
+.ft-hh {
+    position: relative;
+
+    &::before {
+        background: url('images/ft-hh.svg') 50% / contain no-repeat;
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 24px;
+        height: 24px;
+        z-index: 1;
+    }
+}
+
+.footer__copy-right {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-right__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    &:first-child {
+        max-width: 30%;
+
+    }
+
+    max-width: 70%;
+
+}
+
+.copy-right_accent {
+    color: $accent-purple;
+    font-weight: 600;
 }
