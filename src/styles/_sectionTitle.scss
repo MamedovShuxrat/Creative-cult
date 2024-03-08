@@ -4,8 +4,11 @@
 }
 
 .title__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 700px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -41,6 +44,8 @@
     padding: 0 32px 10px;
     color: $primary-color;
     border-radius: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 8px;
 }
@@ -123,6 +128,7 @@
     }
 
     .title__accent-wrapper {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         background-color: inherit;
         padding: 0;
@@ -137,9 +143,13 @@
 
     .title,
     .accent-color,
-    .accent-color_purple,
     .title__accent_purple,
     .title__accent {
+        font-size: 36px;
+    }
+
+    .accent-color,
+    .accent-color_purple {
         font-size: 36px;
     }
 

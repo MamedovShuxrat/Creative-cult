@@ -16,30 +16,48 @@
             <a href="#" class="header__link">
               <img src="images/header-logo.svg" alt="logo" class="header__logo">
             </a>
-            <a href="#" class="header__link  active">Холдинг</a>
-            <a href="#nordCore" class="header__link header__link-opacity">Nordcore</a>
-            <a href="#swift" class="header__link header__link-opacity">Swift Technical</a>
+            <a href="#" class="header__link  active header-logo-links">Холдинг</a>
+            <a href="#nordCore" class="header__link header__link-opacity  header-logo-links">Nordcore</a>
+            <a href="#swift" class="header__link header__link-opacity  header-logo-links">Swift Technical</a>
           </div>
-          <div class="header__list">
+          <div class="header__list mobile-desktop">
+            <div class="header__item">
+              <a href="mailto:example@example.com" class="header__link header__link-email"></a>
+            </div>
+            <div class="header__item">
+              <a href="tel:+7(495)6636500" class="header__link header__link-tel"> </a>
+            </div>
+            <div class="header__item">
+              <div class="burger-menu is-open">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+              </div>
+            </div>
+          </div>
+          <div class="header__list   laptop-desktop">
             <div class="header__item">
               <span class="header__item-link">ru</span>
             </div>
           </div>
-          <div class="header__list">
+          <div class="header__list laptop-desktop">
             <div class="header__item">
               <a href="mailto:example@example.com" class="header__link header__link-email"></a>
 
             </div>
-            <div class="header__item">
+            <div class="header__item laptop-desktop">
               <a href="tel:+7(495)6636500" class="header__link header__link-tel">+7 (495) 663-65-00</a>
             </div>
           </div>
         </div>
-        <nav class="nav">
-          <ul class="nav__lists">
+        <nav class="nav is-open">
+          <ul class=" nav__lists">
             <li class="nav__item nav__item-services">
-              <a href="#team" class="nav__link">Услуги</a>
-              <ul class="nav__sublist">
+              <div class="nav__link-wrapper">
+                <a href="#team" class="nav__link">Услуги</a>
+                <span class="nav__link-arrow" data-target="item-1"></span>
+              </div>
+              <ul class="nav__sublist  is-show" id="item-1">
                 <li class="nav__sub-item">
                   <a href="#consultation" class="nav__sub-link">Подбор персонала</a>
                 </li>
@@ -61,8 +79,11 @@
               <a href="#cases" class="nav__link">Кейсы</a>
             </li>
             <li class="nav__item nav__item-media">
-              <a href="#media" class="nav__link">Медиа</a>
-              <ul class="nav__sublist">
+              <div class="nav__link-wrapper">
+                <a href="#team" class="nav__link">Медиа</a>
+                <span class="nav__link-arrow" data-target="item-2"></span>
+              </div>
+              <ul class="nav__sublist is-show" id="item-2">
                 <li class="nav__sub-item">
                   <a href="#success" class="nav__sub-link">Последние материалы</a>
                 </li>

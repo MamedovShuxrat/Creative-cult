@@ -1,5 +1,5 @@
 .consultation {
-    margin-top: -110px;
+    margin-top: -120px;
     border-radius: 64px 64px 0px 0px;
     position: relative;
     z-index: 10;
@@ -8,8 +8,14 @@
 
 .consultation__inner {
     padding: 120px 0 170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -38,7 +44,10 @@
 }
 
 .consultation__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     row-gap: 6px;
 }
@@ -48,7 +57,11 @@
     border-radius: 50px;
     background: $primary-color;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
 }
@@ -60,13 +73,19 @@
     font-weight: 700;
     line-height: 160%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .social-tg {
     position: relative;
     color: #25A4E2;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
     &::before {
@@ -97,6 +116,8 @@
     color: rgb(82, 205, 95);
 
     text-align: left;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
     &::before {
@@ -127,6 +148,8 @@
     color: #4C75A3;
 
     text-align: left;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
     &::before {
@@ -156,6 +179,8 @@
     color: #145CEF;
 
     text-align: left;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
     &::before {
@@ -198,8 +223,29 @@
         color: $primary-color;
         white-space: nowrap;
         overflow: hidden;
+        -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         outline: none;
+
+        &::-webkit-input-placeholder {
+            color: #FCFCFC;
+            opacity: .7;
+        }
+
+        &::-moz-placeholder {
+            color: #FCFCFC;
+            opacity: .7;
+        }
+
+        &:-ms-input-placeholder {
+            color: #FCFCFC;
+            opacity: .7;
+        }
+
+        &::-ms-input-placeholder {
+            color: #FCFCFC;
+            opacity: .7;
+        }
 
         &::placeholder {
             color: #FCFCFC;
@@ -258,6 +304,8 @@
     border-radius: 50px;
     border: none;
     cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
     &::before {
@@ -294,8 +342,11 @@
     }
 
     .consultation__inner {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         row-gap: 40px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -315,8 +366,23 @@
 }
 
 @media (max-width: 475px) {
+    .consultation {
+        border-radius: 40px 40px 0 0;
+    }
 
     .consultation__item {
         width: 100%;
+    }
+
+    .consultation__title {
+        font-size: 38px;
+    }
+
+    .form {
+        padding: 30px 20px;
+    }
+
+    .form__title {
+        font-size: 28px;
     }
 }

@@ -1,5 +1,8 @@
 .section-wallet_inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 8px;
     position: relative;
@@ -10,15 +13,18 @@
     border-radius: 32px 32px;
     padding-top: 104px;
     width: calc(50% - 8px);
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .section-wallet__item-orange {
+    background: -o-linear-gradient(225deg, rgb(244, 118, 22) 0%, rgb(208, 57, 22) 100%);
     background: linear-gradient(225.00deg, rgb(244, 118, 22) 0%, rgb(208, 57, 22) 100%);
 
 }
 
 .section-wallet__item-green {
+    background: -o-linear-gradient(225deg, rgb(92, 225, 169) 0%, rgb(0, 206, 136) 51.042%, rgb(0, 137, 115) 100%);
     background: linear-gradient(225.00deg, rgb(92, 225, 169) 0%, rgb(0, 206, 136) 51.042%, rgb(0, 137, 115) 100%);
 }
 
@@ -32,19 +38,25 @@
 }
 
 .section-wallet__item-orange-1 {
+    background: url('./images/wallet-bg-3.png') center/cover no-repeat, -o-linear-gradient(225deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
     background: url('./images/wallet-bg-3.png') center/cover no-repeat, linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
 }
 
 .section-wallet__item-orange-2 {
 
+    background: url('./images/wallet-bg-4.png') center/cover no-repeat, -o-linear-gradient(225deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
+
     background: url('./images/wallet-bg-4.png') center/cover no-repeat, linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
 }
 
 .section-wallet__item-orange-3 {
+    background: url('./images/wallet-bg-5.png') center/cover no-repeat, -o-linear-gradient(225deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
     background: url('./images/wallet-bg-5.png') center/cover no-repeat, linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
 }
 
 .section-wallet__item-orange-4 {
+
+    background: url('./images/wallet-bg-6.png') center/cover no-repeat, -o-linear-gradient(225deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
 
     background: url('./images/wallet-bg-6.png') center/cover no-repeat, linear-gradient(225.00deg, rgb(244, 118, 22) 0.645%, rgb(208, 57, 22) 100.645%);
 }
@@ -55,13 +67,22 @@
     background-color: $primary-color;
     border-radius: 32px;
     padding: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
 }
 
 .section-wallet__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 16px;
 }
@@ -79,7 +100,11 @@
     border-radius: 50px;
     background: rgb(213, 226, 252);
     position: relative;
+    -webkit-transition: -webkit-transform .2s linear;
+    transition: -webkit-transform .2s linear;
+    -o-transition: transform .2s linear;
     transition: transform .2s linear;
+    transition: transform .2s linear, -webkit-transform .2s linear;
 
     &::before {
         content: '';
@@ -93,6 +118,8 @@
     }
 
     &:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
         transform: scale(1.1);
     }
 }
@@ -111,7 +138,10 @@
 
 .section-wallet__tags {
     margin-top: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
     row-gap: 4px;
@@ -151,6 +181,22 @@
 }
 
 @media (max-width: 475px) {
+    .section-wallet__item {
+        padding-top: 70px;
+    }
+
+    .section-wallet__content {
+        padding: 20px;
+    }
+
+    .section-wallet__title-link {
+        height: 30px;
+
+        &::before {
+            left: 14px;
+            top: 8px;
+        }
+    }
 
     .section-wallet__title {
         font-size: 28px;

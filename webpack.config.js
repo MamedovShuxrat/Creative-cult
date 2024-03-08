@@ -67,6 +67,10 @@ module.exports = {
                 {
                     from: path.join(__dirname, 'src', 'images'),
                     to: path.join(__dirname, 'dist', 'images'),
+                    transform: (content, path) => {
+                        // Преобразование содержимого файла в строку
+                        return content.toString();
+                    }
                 },
             ],
         }),

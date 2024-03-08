@@ -1,9 +1,10 @@
 .success {
     border-radius: 64px;
     padding-top: 55px;
-    margin-top: -55px;
+    margin-top: -64px;
     position: relative;
     z-index: 10;
+    background: url('./images/succsess-bg.png') center/cover no-repeat, -o-linear-gradient(315deg, rgb(28, 39, 74) 0%, rgb(4, 7, 17) 100%);
     background: url('./images/succsess-bg.png') center/cover no-repeat, linear-gradient(135.00deg, rgb(28, 39, 74) 0%, rgb(4, 7, 17) 100%);
 }
 
@@ -43,7 +44,10 @@
     }
 
     .title__wrapper-light_blue {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -55,6 +59,12 @@
 
 
     .success-btn__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 8px;
         padding-bottom: 200px;
     }
 
