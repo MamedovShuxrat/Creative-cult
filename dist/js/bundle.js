@@ -98,7 +98,7 @@ toggleFooterBtns.forEach(btn => {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "icons\\header-logo..svg";
+module.exports = __webpack_require__.p + "images\\header-logo..svg";
 
 /***/ }),
 
@@ -106,7 +106,7 @@ module.exports = __webpack_require__.p + "icons\\header-logo..svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "bc764cf0b83a19493292.png";
+module.exports = __webpack_require__.p + "images\\nordcore..png";
 
 /***/ }),
 
@@ -114,7 +114,7 @@ module.exports = __webpack_require__.p + "bc764cf0b83a19493292.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "213255f4e5edeec4a680.png";
+module.exports = __webpack_require__.p + "images\\swift-logo..png";
 
 /***/ })
 

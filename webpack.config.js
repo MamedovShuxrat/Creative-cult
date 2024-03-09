@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: 'bundle.js',
+        filename: 'js/bundle.js',
         path: path.resolve(__dirname, 'dist'),
         publicPath: '',
     },
@@ -24,12 +24,15 @@ module.exports = {
             {
                 test: /\.(png|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
+                generator: {
+                    filename: path.join('images', '[name].[ext]'),
+                },
             },
             {
                 test: /\.svg$/,
                 type: 'asset/resource',
                 generator: {
-                    filename: path.join('icons', '[name].[ext]'),
+                    filename: path.join('images', '[name].[ext]'),
                 },
             },
             {
@@ -39,6 +42,13 @@ module.exports = {
                         loader: 'html-loader',
                     },
                 ],
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: "asset/resource",
+                generator: {
+                    filename: "fonts/[name][ext]",
+                },
             },
         ]
     },
