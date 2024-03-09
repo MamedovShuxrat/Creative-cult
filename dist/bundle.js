@@ -74,6 +74,7 @@ toggleNavBtns.forEach(btn => {
         }
     })
 })
+
 const toggleFooterBtns = document.querySelectorAll('.footer__title-arrow')
 
 toggleFooterBtns.forEach(btn => {
