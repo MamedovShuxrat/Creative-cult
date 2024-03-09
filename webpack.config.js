@@ -55,24 +55,22 @@ module.exports = {
             new CssMinimizerPlugin(),
         ],
     },
-    mode: 'development',
+    mode: 'production',
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
         }),
         new MiniCssExtractPlugin({
             filename: 'styles.css'
-        }), new CopyWebpackPlugin({
+        }),
+        new CopyWebpackPlugin({
             patterns: [
                 {
                     from: path.join(__dirname, 'src', 'images'),
                     to: path.join(__dirname, 'dist', 'images'),
-                    transform: (content, path) => {
-                        // Преобразование содержимого файла в строку
-                        return content.toString();
-                    }
                 },
             ],
         }),
+
     ]
 }

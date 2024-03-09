@@ -552,6 +552,8 @@
         background-image: url('./images/footer-arrow.svg');
         background-repeat: no-repeat;
         cursor: pointer;
+
+        transition: all .3s ease-in-out;
     }
 
     .footer__about-lists {

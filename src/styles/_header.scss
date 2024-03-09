@@ -84,8 +84,12 @@
         transition: width .4s ease;
     }
 
-    &:hover::before {
-        width: 100%
+    &:not(.active):hover::before {
+        width: 100%;
+    }
+
+    &.active::before {
+        width: 0;
     }
 }
 
