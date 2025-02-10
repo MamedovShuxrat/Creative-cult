@@ -6,31 +6,32 @@
     z-index: 10;
     background: url('./images/succsess-bg.png') center/cover no-repeat, -o-linear-gradient(315deg, rgb(28, 39, 74) 0%, rgb(4, 7, 17) 100%);
     background: url('./images/succsess-bg.png') center/cover no-repeat, linear-gradient(135.00deg, rgb(28, 39, 74) 0%, rgb(4, 7, 17) 100%);
-}
 
-.succsess__descr {
-    margin-top: 180px;
-}
 
-.success-btn__wrapper {
-    padding-bottom: 340px;
-}
+    &__descr {
+        margin-top: 180px;
+    }
 
-.success__btn {
-    position: relative;
-    background: rgba(252, 252, 252, 0.2);
-    color: $primary-color;
+    &-btn__wrapper {
+        padding-bottom: 340px;
+    }
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 16px;
-        right: 16px;
-        width: 12px;
-        height: 10px;
-        background: url('./images/mail-gray.svg') center/cover no-repeat;
-        z-index: 1;
-        cursor: pointer;
+    &__btn {
+        position: relative;
+        background: rgba(252, 252, 252, 0.2);
+        color: $primary-color;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 12px;
+            height: 10px;
+            background: url('./images/mail-gray.svg') center/cover no-repeat;
+            z-index: 1;
+            cursor: pointer;
+        }
     }
 }
 

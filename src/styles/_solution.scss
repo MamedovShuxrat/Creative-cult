@@ -5,13 +5,13 @@
     border-radius: 0px 0px 64px 64px;
     position: relative;
     z-index: 11;
-}
 
-.solution__inner {
-    padding: 0 120px;
-    position: relative;
-    border-radius: 0px 0px 64px 64px;
-    border: 1px solid #fff;
-    overflow: hidden;
+    &__inner {
+        padding: 0 120px;
+        position: relative;
+        border-radius: 0px 0px 64px 64px;
+        border: 1px solid #fff;
+        overflow: hidden;
 
+    }
 }

@@ -11,6 +11,10 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         publicPath: '',
     },
+    performance: {
+        maxAssetSize: 512 * 1024,
+        maxEntrypointSize: 512 * 1024,
+    },
     module: {
         rules: [
             {

@@ -7,106 +7,106 @@
     align-items: center;
     position: relative;
     z-index: 10;
-}
 
-.about-complex {
-    margin-top: 88px;
-}
-
-.about-team {
-    margin-top: 240px;
-}
-
-.about__item {
-    margin-right: 100px;
-
-    &:last-child {
-        margin-right: 0;
+    &-complex {
+        margin-top: 88px;
     }
-}
 
-.about__title-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 6px;
-    position: relative;
-
-    &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        width: 100%;
-        height: 2px;
-        background: rgb(117, 117, 117);
-        background: -webkit-gradient(linear, right top, left top, from(rgba(117, 117, 117, 0.11528361344537819)), color-stop(46%, rgba(167, 167, 167, 0.3897934173669467)), to(rgba(250, 250, 250, 0.5130427170868348)));
-        background: -o-linear-gradient(right, rgba(117, 117, 117, 0.11528361344537819) 0%, rgba(167, 167, 167, 0.3897934173669467) 46%, rgba(250, 250, 250, 0.5130427170868348) 100%);
-        background: linear-gradient(-90deg, rgba(117, 117, 117, 0.11528361344537819) 0%, rgba(167, 167, 167, 0.3897934173669467) 46%, rgba(250, 250, 250, 0.5130427170868348) 100%);
+    &-team {
+        margin-top: 240px;
     }
-}
 
-.accent-about__title {
-    color: $primary-color;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 100%;
-}
+    &__item {
+        margin-right: 100px;
 
-.about__title {
-    color: $primary-color;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 116%;
-    opacity: 0.6;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 
-}
+    &__title-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 6px;
+        position: relative;
 
-.about__text {
-    color: $gray;
-    font-family: $secondary-fonts;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 140%;
-    margin-top: 8px;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 2px;
+            background: rgb(117, 117, 117);
+            background: -webkit-gradient(linear, right top, left top, from(rgba(117, 117, 117, 0.11528361344537819)), color-stop(46%, rgba(167, 167, 167, 0.3897934173669467)), to(rgba(250, 250, 250, 0.5130427170868348)));
+            background: -o-linear-gradient(right, rgba(117, 117, 117, 0.11528361344537819) 0%, rgba(167, 167, 167, 0.3897934173669467) 46%, rgba(250, 250, 250, 0.5130427170868348) 100%);
+            background: linear-gradient(-90deg, rgba(117, 117, 117, 0.11528361344537819) 0%, rgba(167, 167, 167, 0.3897934173669467) 46%, rgba(250, 250, 250, 0.5130427170868348) 100%);
+        }
+    }
+
+    .accent-about__title {
+        color: $primary-color;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 100%;
+    }
+
+    &__title {
+        color: $primary-color;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 116%;
+        opacity: 0.6;
+    }
+
+    &__text {
+        color: $gray;
+        font-family: $secondary-fonts;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-top: 8px;
+    }
 }
 
 @media (max-width: 768px) {
-
     .about {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         -ms-flex-pack: distribute;
         justify-content: space-around;
+
+        &__item {
+            max-width: 50%;
+            margin-right: 0;
+        }
+
+        .accent-about__title {
+            font-size: 28px;
+        }
+
+        &-team {
+            margin-top: 140px;
+        }
     }
 
-    .about__item {
-        max-width: 50%;
-        margin-right: 0;
-    }
-
-    .accent-about__title {
-        font-size: 28px;
-    }
-
-    .about-team {
-        margin-top: 140px;
-    }
 
 }
 
 @media (max-width: 475px) {
     .about {
         justify-content: center;
+
+        &-team {
+            margin-top: 88px;
+        }
+
+        &__item {
+            max-width: 100%;
+            width: 70%;
+            margin-bottom: 15px;
+        }
     }
 
-    .about-team {
-        margin-top: 88px;
-    }
-
-    .about__item {
-        max-width: 100%;
-        width: 70%;
-        margin-bottom: 15px;
-    }
 }

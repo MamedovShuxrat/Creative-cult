@@ -58,11 +58,11 @@
 }
 
 .nav__sublist {
-    // display: none;
     position: absolute;
     list-style: none;
     top: 50px;
     left: 0;
+    z-index: 10;
 }
 
 .nav__sub-item {

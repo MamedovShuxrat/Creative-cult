@@ -12,6 +12,7 @@
 @import "styles/sectionCard.scss";
 @import "styles/success.scss";
 @import "styles/consultation.scss";
+@import "styles/common.scss";
 
 @import "styles/footer.scss";
 
@@ -41,7 +42,7 @@ ul {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;

@@ -1,0 +1,303 @@
+.social {
+
+    &-tg {
+        position: relative;
+        color: #25A4E2;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 25%;
+            width: 14px;
+            height: 14px;
+            background: url('./images/social-tg.svg') center/contain no-repeat;
+            z-index: 1;
+        }
+
+        &:hover {
+            background-color: #25A4E2;
+            color: $primary-color;
+            border-radius: 60px;
+
+            &::before {
+                opacity: 0;
+            }
+        }
+
+    }
+
+    &-what {
+        position: relative;
+        color: rgb(82, 205, 95);
+
+        text-align: left;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 25%;
+            width: 14px;
+            height: 14px;
+            background: url('./images/social-what.svg') center/contain no-repeat;
+            z-index: 1;
+        }
+
+        &:hover {
+            background: rgb(82, 205, 95);
+            color: $primary-color;
+            border-radius: 51px;
+
+            &::before {
+                opacity: 0;
+            }
+        }
+    }
+
+
+    &-vk {
+        position: relative;
+        color: #4C75A3;
+
+        text-align: left;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 25%;
+            width: 15px;
+            height: 15px;
+            background: url('./images/social-vk.svg') center/contain no-repeat;
+            z-index: 1;
+        }
+
+        &:hover {
+            background: #4C75A3;
+            color: $primary-color;
+            border-radius: 51px;
+
+            &::before {
+                opacity: 0;
+            }
+        }
+    }
+
+    &-mail {
+        position: relative;
+        color: #145CEF;
+
+        text-align: left;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 25%;
+            width: 15px;
+            height: 15px;
+            background: url('./images/social-mail.svg') center/contain no-repeat;
+            z-index: 1;
+        }
+
+        &:hover {
+            background: #145CEF;
+            color: $primary-color;
+            border-radius: 50px;
+            width: 100%;
+
+            &::before {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+
+.form {
+    border-radius: 40px;
+    background: rgba(252, 252, 252, 0.2);
+    padding: 56px 48px;
+
+    input {
+        padding: 16px 24px;
+        border: none;
+        width: 100%;
+        background: rgba(252, 252, 252, 0.22);
+        color: $primary-color;
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        outline: none;
+
+        &::-webkit-input-placeholder {
+            color: #FCFCFC;
+            opacity: .7;
+        }
+
+        &::-moz-placeholder {
+            color: #FCFCFC;
+            opacity: .7;
+        }
+
+        &:-ms-input-placeholder {
+            color: #FCFCFC;
+            opacity: .7;
+        }
+
+        &::-ms-input-placeholder {
+            color: #FCFCFC;
+            opacity: .7;
+        }
+
+        &::placeholder {
+            color: #FCFCFC;
+            opacity: .7;
+        }
+    }
+
+    &__title {
+        color: $primary-color;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 104%;
+        margin-bottom: 32px;
+    }
+
+    &__name {
+        margin-bottom: 8px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    &__tel {
+        margin-bottom: 8px;
+    }
+
+    &__email {
+        border-radius: 0 0 12px 12px;
+        margin-bottom: 32px;
+    }
+
+    &__descr {
+        font-family: $secondary-fonts;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 150%;
+        opacity: 0.8;
+        margin-bottom: 16px;
+
+    }
+
+    &__accent-color {
+        color: #4AD6FF;
+        opacity: 1;
+    }
+
+    &__submit {
+        position: relative;
+        padding: 10px 32px;
+        background-color: $primary-color;
+        color: $deep-blue;
+        color: rgb(20, 92, 239);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 160%;
+        width: 100%;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        -webkit-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            right: 90px;
+            width: 15px;
+            height: 15px;
+            background: url('./images/social-mail.svg') center/contain no-repeat;
+            z-index: 1;
+        }
+
+        &:hover {
+            background: #145CEF;
+            color: $primary-color;
+
+            &::before {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.copy-right__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    text-align: center;
+
+    &:first-child {
+        max-width: 30%;
+
+    }
+
+    max-width: 70%;
+
+}
+
+.copy-right_accent {
+    color: $accent-purple;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 1120px) {
+    .form__submit {
+
+        &::before {
+            right: 20px;
+        }
+    }
+
+    .form {
+        padding: 46px 38px;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 475px) {
+
+    .form {
+        padding: 30px 20px;
+
+        &__title {
+            font-size: 28px;
+        }
+    }
+
+}

@@ -3,8 +3,8 @@
     background: url("./images/main-back-1.png") center/cover;
     background-position: center 40px;
     min-height: 727px;
-}
 
-.complex__descr {
-    padding-top: 120px;
+    &__descr {
+        padding-top: 120px;
+    }
 }

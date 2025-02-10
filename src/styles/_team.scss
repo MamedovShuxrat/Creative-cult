@@ -6,14 +6,23 @@
     background-position: center 40px;
     margin-top: -160px;
 
+    &__descr {
+        padding-top: 160px;
+        position: relative;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 160px;
+        right: 0;
+        cursor: pointer;
+        z-index: 15;
+    }
 }
 
 
 
-.team__descr {
-    padding-top: 160px;
-    position: relative;
-}
+
 
 .accent-color_purple {
     color: $accent-purple;
@@ -24,13 +33,7 @@
     font-size: 48px;
 }
 
-.team__btn {
-    position: absolute;
-    top: 160px;
-    right: 0;
-    cursor: pointer;
-    z-index: 15;
-}
+
 
 @media (max-width: 1120px) {
     .team__btn {
